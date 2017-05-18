@@ -12,9 +12,9 @@ module Escpos
         @image = ChunkyPNG::Image.from_file(image_path)
       end
 
-      unless @image.width % 8 == 0 && @image.height % 8 == 0
-        raise ArgumentError.new("Image width and height must be a multiple of 8.")
-      end
+#       unless @image.width % 8 == 0 && @image.height % 8 == 0
+#         raise ArgumentError.new("Image width and height must be a multiple of 8.")
+#       end
     end
 
     def to_escpos
